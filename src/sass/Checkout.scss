@@ -1,0 +1,118 @@
+.checkout {
+  background-color: #4ad87f;
+  width: 100%;
+  height: auto;
+  padding: 50px 0 500px 0;
+
+  &__cart {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  &__link {
+    align-self: center;
+    background-color: #010000;
+    border: none;
+    color: #fefffe;
+    border-radius: 20px;
+    padding: 10px 50px;
+    cursor: pointer;
+    margin-left: 0;
+    text-decoration: none;
+  }
+
+  &__noItems {
+    color: #4a4948;
+    font-size: 14px;
+    margin: 100px 0;
+    padding-bottom: 100px;
+    margin-bottom: 100px;
+    border-bottom: #010000 1px solid;
+  }
+
+  &__items {
+    margin-top: 100px;
+    padding: 0 10px;
+  }
+
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #010000;
+    padding: 50px 0;
+  }
+
+  &__itemInfo {
+    display: flex;
+    gap: 40px;
+  }
+
+  &__itemImg {
+    width: 80px;
+    box-shadow: 4px 3px 8px rgb(0, 0, 0, 0.5);
+  }
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  &__price {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: bold;
+  }
+
+  &__coins {
+    width: 30px;
+  }
+
+  &__delete {
+    width: 30px;
+    cursor: pointer;
+  }
+
+  &__total {
+    display: flex;
+    gap: 50px;
+    align-self: center;
+    margin-top: 60px;
+    font-size: 30px;
+    font-weight: bold;
+    color: #4a4948;
+  }
+
+  &__totalPrice {
+    color: #010000;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .checkout {
+    &__cart {
+      width: 60%;
+    }
+
+    &__link {
+      align-self: flex-start;
+      margin-left: 10px;
+    }
+
+    &__noItems {
+      font-size: 30px;
+    }
+
+    &__items {
+      padding: 0;
+    }
+
+    &__total {
+      align-self: flex-start;
+    }
+  }
+}

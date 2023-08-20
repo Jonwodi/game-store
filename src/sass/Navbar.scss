@@ -1,0 +1,45 @@
+.navbar {
+  background-color: #010000;
+  color: #fefffe;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 5px 5px;
+  width: 100%;
+
+  &__items {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  &__icon {
+    width: 15px;
+    height: 15px;
+  }
+
+  &__text {
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .navbar {
+    justify-content: flex-start;
+    padding: 5px 0 5px 60px;
+    gap: 50px;
+
+    &__items {
+      gap: 20px;
+    }
+
+    &__icon {
+      width: 25px;
+      height: 25px;
+    }
+
+    &__text {
+      font-size: 18px;
+    }
+  }
+}

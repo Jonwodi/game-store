@@ -1,0 +1,88 @@
+.product {
+  background-color: #4ad87f;
+  background-repeat: no-repeat;
+  background-size: auto 150px;
+  background-position: right bottom;
+  background-image: url("/assets/controller.png");
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  height: auto;
+  padding: 30px;
+
+  &__img {
+    height: 150px;
+    box-shadow: 4px 3px 8px rgb(0, 0, 0, 0.5);
+  }
+
+  &__title {
+    text-align: center;
+    font-size: 16px;
+  }
+
+  &__description {
+    text-align: center;
+    font-size: 12px;
+    color: #4a4948;
+  }
+
+  &__price {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    text-align: center;
+    font-weight: bold;
+  }
+
+  &__coins {
+    height: 20px;
+  }
+
+  &__btn--wrap {
+    text-align: center;
+  }
+
+  &__btn {
+    background-color: #010000;
+    border: none;
+    color: #fefffe;
+    border-radius: 20px;
+    padding: 10px 30px;
+    cursor: pointer;
+  }
+
+  &__btn:disabled {
+    opacity: 0.5;
+    cursor: default;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .product {
+    height: auto;
+    flex-direction: row;
+
+    &__img {
+      height: 200px;
+      width: 170px;
+    }
+
+    &__title {
+      text-align: left;
+    }
+
+    &__description {
+      text-align: left;
+    }
+
+    &__price {
+      text-align: left;
+      justify-content: flex-start;
+    }
+
+    &__btn--wrap {
+      text-align: left;
+    }
+  }
+}

@@ -1,0 +1,45 @@
+.hero {
+  background-image: url("/assets/hero.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+  z-index: -999;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.7);
+    height: 500px;
+  }
+
+  &--small {
+    height: 208px;
+    background-image: url("/assets/hero.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -999;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    &::after {
+      height: 208px;
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background: rgba(0, 0, 0, 0.7);
+    }
+  }
+}

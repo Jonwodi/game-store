@@ -1,0 +1,140 @@
+.basket {
+  background-color: #4ad87f;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+  &__heading {
+    font-size: 35px;
+    text-align: center;
+    margin-top: 100px;
+  }
+
+  &__wrap {
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-bottom: 20px;
+  }
+
+  &__cart {
+    padding: 0 30px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  &__items {
+    flex-grow: 1;
+  }
+
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 25px;
+    margin-bottom: 25px;
+    border-bottom: #010000 1px solid;
+  }
+
+  &__item:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+  }
+
+  &__itemInfo {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+
+  &__itemImg {
+    height: 70px;
+    box-shadow: 4px 3px 8px rgb(0, 0, 0, 0.5);
+  }
+
+  &__itemText {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  &__itemHeading {
+    font-size: 10px;
+    text-align: left;
+  }
+
+  &__itemPrice {
+    font-size: 12px;
+    font-weight: bold;
+  }
+
+  &__coins {
+    width: 12px;
+  }
+
+  &__delete {
+    width: 20px;
+    cursor: pointer;
+  }
+
+  &__total {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    color: #4a4948;
+    margin-bottom: 50px;
+  }
+
+  &__totalPrice {
+    color: #010000;
+  }
+
+  &__noItems {
+    color: #4a4948;
+    font-size: 14px;
+    margin: 100px 0;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: #fefffe;
+    padding: 10px 90px;
+    margin: 0 auto;
+    border-radius: 20px;
+    cursor: pointer;
+    background-color: #010000;
+    font-size: 12px;
+  }
+
+  &__btn {
+    background-color: #010000;
+    border: none;
+    color: #fefffe;
+    padding: 15px 90px;
+    margin: 0 auto;
+    border-radius: 20px;
+  }
+
+  &__btn:disabled {
+    opacity: 0.5;
+    cursor: default;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .basket {
+    width: 20%;
+
+    &__heading {
+      text-align: left;
+      padding-left: 30px;
+    }
+
+    &__noItems {
+      font-size: 18px;
+      margin: auto;
+    }
+  }
+}

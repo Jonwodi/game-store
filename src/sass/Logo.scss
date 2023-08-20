@@ -1,0 +1,29 @@
+.logo {
+  height: 4em;
+  padding: 1.5em;
+  will-change: filter;
+  padding-right: 0;
+  width: 275px;
+  margin-top: 20px;
+
+  &--checkout {
+    height: 4em;
+    padding: 1.5em;
+    will-change: filter;
+    padding-right: 0;
+    width: 275px;
+    margin-top: 20px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .logo {
+    padding-right: 600px;
+    width: 450px;
+
+    &--checkout {
+      padding-right: 900px;
+      width: 450px;
+    }
+  }
+}
